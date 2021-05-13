@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    background-color: #141013;
+}
+#Menu{
+    display: flex;
+    background-color: #3b1725;
+    margin: 0;
+}
+#Menu li{
+    color: #141013;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+}
+
+#Menu li:last-child{
+    margin-left: auto;
+}
+
+.SobreMin{
+    display: flex;
+    height: 100vh;
+
+}
+.centralizar{
+    margin: auto;
+    text-align: center;
+    
+}
+.Perfil{
+    border-radius: 50%;
+}
+.banner{
+    display: flex;
+    padding-left: 20%;
+}
+#Ferramentas img{
+    display: block;
+    border-radius: 20%;
+    padding: 15;
+}
+#Ferramentas li{
+    text-decoration: none;
+    display: block;
+    padding-left: 15px;
+}
