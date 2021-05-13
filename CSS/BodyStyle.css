@@ -73,7 +73,6 @@ hr{
 #Skills
 {
   margin: 5%;
-  margin-top: 50%;
 }
 #Skills img
 {
@@ -193,10 +192,6 @@ padding:0px;
 /* Responsividade */
 @media(max-width:600px)
 {
-  #Info
-  {
-  height: 550px;
-  }
   #text
   {
     word-wrap: break-word;
