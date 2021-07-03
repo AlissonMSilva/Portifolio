@@ -1,10 +1,3 @@
-.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-}
 body
 {
     background: #11070b;
@@ -31,11 +24,6 @@ header
 .p-2{
   padding: .5rem!important;
 }
-hr{
-  color: #df3e23;
-  border: solid 1px;
-  margin-top: 0px;
-}
 /*Parte do site Informações*/
 #socialMedia a
 {
@@ -45,15 +33,11 @@ hr{
 }
 #Jogos
 {
-  margin: 10% 5%;
-  padding: 5%;
+  margin: 10%;
 }
 #Artes{
   margin-top:20%;
   margin-bottom: 20%;
-}
-.carousel-inner img{
-  border: #ff4b2b 4px solid;
 }
 .logo
 {
@@ -81,7 +65,7 @@ hr{
 }
 
 .Info{
-  margin-top: 25%;
+  margin-top: 10%;
 }
 #text, #text-2
 {
@@ -92,8 +76,6 @@ hr{
   color: rgb(255, 255, 255);
 }
 #text-2{
-  word-wrap: break-word;
-  max-width: 800px;
   margin-top: 0px;
 }
 /*Mudança Estilização de textos*/
@@ -121,22 +103,13 @@ hr{
   font-weight: bold;
   margin-bottom: 50px;
 }
-h4
-{
-  text-align: center;
-  color: rgb(255, 255, 255);
-}
-
-h3
+h3,h2
 {
   color: #df3e23;
   font-weight: bold;
 }
 h2
 {
-  color: #df3e23;
-  font-family: sans-serif;
-  font-weight: bold;
   margin-bottom: 20px;
 }
 
@@ -155,39 +128,23 @@ h2
 }
 .projetoBackImage
 {
-  width: 500px;
-  height: 700px;
+  width: 100%;
+  height: 900px;
   background: url("../Img/Gameficando o futuro.png") no-repeat; 
-  background-size: 500px;
+  background-size: 100%;
 }
-.projetoBackImage p{
-  color: black;
-  word-wrap: break-word;
-  max-width: 400px;
-}
-.projetoBackImage h3{color:white; margin-top: 50px; background-color: #11070b;}
+
 #text-project{
   background-color: rgba(255,255,255,.5);
-  margin-top: 225px;
+  margin-top: 325px;
   color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: large;
 }
-.icons img{
-  width: 8%;
-  padding: 0px;
-  margin-left: 5px;
-  border-radius: 50%;
-  border: solid 2px #ff4b2b;
-}
-.icons img:first-child
-{
-  margin-left: 10px;
-}
 #Games img
 {
   padding: 10px;
-  width: 95%;
+  width: 100%;
 }
 #download
 {
@@ -244,7 +201,7 @@ padding:0px;
   right: 0px;
 }
 /* Responsividade */
-@media(max-width:600px)
+@media(max-width:800px)
 {
   #text
   {
@@ -266,17 +223,11 @@ padding:0px;
     background-position: center;
     background-size: 100%;
   }
-  #firstBackground,#secondBackground
-  {
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 100%;
-    height: 250px;
-  }
+
   .SobreMin
   {
     border-radius: 80%;
-    width: 60%;
+    width: 40%;
   }
   .text
   {
@@ -286,19 +237,23 @@ padding:0px;
     padding-top:50px;
   }
   #Skills p{
-    font-size:1em;
+    font-size:1.5em;
     font-style: oblique;
   }
   #Skills img
   {
-    width: 15%;
+    width: 20%;
   }
-  #Games img{
-  width: 90%;
-   margin: 5px 7px;
+  .projetoBackImage
+  { 
+    background-size: 200%;
   }
   #container
   {
     margin: 5%;
+  }
+  #navbar
+  {
+    margin-left: 20px;
   }
 }
