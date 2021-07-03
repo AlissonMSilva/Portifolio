@@ -15,3 +15,15 @@ function myFunction() {
         navbar.classList.remove("sticky");
     }
 }
+var open=false;
+function trocaImage()
+{
+    var obj=document.getElementById("navIcon");
+    open=!open;
+    if(!open){
+        obj.src="./Img/IconeMenuPlus.png";        
+    }if(open)
+    {
+        obj.src="./Img/IconeMenuMinus.png";
+    }
+}
