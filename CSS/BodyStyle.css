@@ -108,16 +108,6 @@ h2
 }
 
 /* Lista de Jogos parte de estilização do mesmo icons img e outros*/
-#container{
-  border-radius: 30px 30px 0px 30px;
-  width: 320px;
-  height: 280px;
-  margin-top: 20px;
-}
-#container p{
-  color: rgb(0, 0, 0);
-  font-weight: bolder;
-}
 .projetoBackImage
 {
   width: 100%;
@@ -132,19 +122,6 @@ h2
   color: rgb(255, 255, 255);
   font-weight: bold;
   font-size: large;
-}
-#Games img
-{
-  padding: 10px;
-  width: 100%;
-}
-#download
-{
-  margin-left: 80px;
-}
-#download a:hover
-{
-  filter:grayscale(2);
 }
 /* termina aqui jogos */
 div{

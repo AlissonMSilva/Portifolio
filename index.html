@@ -13,7 +13,7 @@
     <title>Alisson GameDev</title>
 </head>
 
-<body>
+<body onload="CreateDivs()">
     <nav id="socialMedia" class="navbar-expand-lg">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
@@ -70,7 +70,7 @@
             </div>
             <div id=text-2 class="col-md-3">
                 <font size="3">
-                    Bem-vindo, me chamo Alisson sou desenvolvedor de Jogos faco sites por hobbie.
+                    Bem-vindo, me chamo Alisson sou desenvolvedor de Jogos e crio sites como passatempo.
                     Cursei Análise e Desenvolvimento de Sistemas, trabalho com a criação de Games há mais de 
                     2 anos, trabalho tanto na parte artística quanto na programação procuro sempre pensar em 
                     novas formas de ser passar a melhor sensação ao se jogar um jogo conhecido como
@@ -156,42 +156,13 @@
         <div id="Jogos">
             <div class=" logo center"> 
                 <img src="./Img/Games.png" alt="" >
+                <!-- se voce esta vendo essa parte e por curiosidade mesmo tenho certeza,
+                     mais fique sabendo que essa parte foi feita por codigo javascript pois eu teria muito trabalho para se fazer 
+                     o mesmo um a um depois de um certo tempo, agora e so adiciona o caminho da imagem e do link em uma lista -->
             </div>
             <div class="p-2"></div>            
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div id="container">
-                        <!--Pong-->
-                        <div id="Games" class="center">
-                            <img src="./Img/BannerNewPong.png" alt="">
-                        </div>
-                        <div class="p-2"></div>
-                        <div id="download"><a href="https://morfeudev.itch.io/pong" target="_blank"><img
-                                    src="./Img/Download.png" alt=""></a></div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div id="container">
-                        <!--SpaceShooter-->
-                        <div id="Games" class="center">
-                            <img src="./Img/bannerSpaceShooter.png" alt="">
-                        </div>
-                        <div class="p-2"></div>
-                        <div id="download"><a href="https://morfeudev.itch.io/space-shooter" target="_blank"><img
-                                    src="./Img/Download.png" alt=""></a></div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div id="container">
-                        <!--Jogo da Velha-->
-                        <div id="Games" class="center">
-                            <img src="./Img/BannerJogodaVelha.png" alt="">
-                        </div>
-                        <div class="p-2"></div>
-                        <div id="download"><a href="https://morfeudev.itch.io/jogo-da-velha" target="_blank"><img
-                                    src="./Img/Download.png" alt=""></a></div>
-                    </div>
-                </div>
+            <div id="games"class="row">
+
             </div>
         </div>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="1500" data-pause="hover">
@@ -235,6 +206,7 @@
                     <div class="col-md-4">
                         <h2>Redes Socias</h2>
                         <nav class="nav flex-column socialMedia">
+                            <a href="https://github.com/MilesGamedev" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>Github</a>
                             <a href="https://www.linkedin.com/in/alisson-marques-benedicto-da-silva-799765212/" target="_blank">Linked<i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                             <a href="https://twitter.com/MilesGamedev" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
                             <a href="https://www.youtube.com/channel/UCRNJrjOnLN6sdJM2odh0qfA" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i> Youtube</a>
@@ -254,6 +226,8 @@
             </div>
         </footer>
     </section>
+    
+    <script src="./JS/AddProjects.js"></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <script src="https://use.fontawesome.com/bca4cd3500.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
