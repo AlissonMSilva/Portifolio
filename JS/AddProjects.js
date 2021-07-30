@@ -58,15 +58,12 @@ function CreateDownload()
     {
         var newImg=new Image();
         var newLink=document.createElement('a');
+        newImg.src=emBreve;
         if(links[i]!='')
         {
             newImg.src=downloadImg;
             newLink.setAttribute('href','https://morfeudev.itch.io/'+links[i]);
             newLink.setAttribute('target',"_blank");
-        }
-        else
-        {
-            newImg.src=emBreve;
         }
         newLink.appendChild(newImg);
         newLink.style.width="50%";
