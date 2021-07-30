@@ -1,8 +1,9 @@
 //Array com o caminho de cada imagem dos meus projetos adicione um novo caminho para um novo projeto
-var imgs=['./Img/BannerJogodaVelha.png','./Img/BannerNewPong.png','./Img/BannerSpaceShooter.png'];
+var imgs=['./Img/BannerJogodaVelha.png','./Img/BannerNewPong.png'];
 var downloadImg='./Img/Download.png';
+var emBreve='./Img/emBreve.png';
 // nome da parte final da url de cada projeto, adicione um novo para ter o link estabelecido deve estar na mesma ordem do array de imgs
-var links=['jogo-da-velha','pong','space-shooter'];
+var links=['jogo-da-velha',''];
 function CreateDivs()
 {
     for(var i=0;i<imgs.length;i++)
@@ -45,6 +46,7 @@ function CreateImagens()
         
         container.style.width="320px";
         container.style.height="280px";
+        container.style.backgroundColor="#6d758d";
         container.style.marginTop="20px";
         container.style.marginLeft="5%";
         
@@ -55,10 +57,17 @@ function CreateDownload()
     for(var i=0;i<links.length;i++)
     {
         var newImg=new Image();
-        newImg.src=downloadImg;
         var newLink=document.createElement('a');
-        newLink.setAttribute('href','https://morfeudev.itch.io/'+links[i]);
-        newLink.setAttribute('target',"_blank");
+        if(links[i]!='')
+        {
+            newImg.src=downloadImg;
+            newLink.setAttribute('href','https://morfeudev.itch.io/'+links[i]);
+            newLink.setAttribute('target',"_blank");
+        }
+        else
+        {
+            newImg.src=emBreve;
+        }
         newLink.appendChild(newImg);
         newLink.style.width="50%";
         newLink.style.marginLeft="25%";

@@ -33,7 +33,7 @@ header
 }
 #Jogos
 {
-  margin: 10%;
+  margin: 5%;
 }
 #Artes{
   margin-top:20%;
@@ -172,6 +172,10 @@ padding:0px;
 /* Responsividade */
 @media(max-width:800px)
 {
+  #Jogos
+  {
+    margin: 10%;
+  }
   #text
   {
     word-wrap: break-word;
