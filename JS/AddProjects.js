@@ -1,9 +1,9 @@
 //Array com o caminho de cada imagem dos meus projetos adicione um novo caminho para um novo projeto
-var imgs=['./Img/BannerJogodaVelha.png','./Img/BannerNewPong.png'];
+var imgs=['./Img/BannerJogodaVelha.png','./Img/BannerNewPong.png','./Img/BannerSpaceShooter.png'];
 var downloadImg='./Img/Download.png';
 var emBreve='./Img/emBreve.png';
 // nome da parte final da url de cada projeto, adicione um novo para ter o link estabelecido deve estar na mesma ordem do array de imgs
-var links=['jogo-da-velha',''];
+var links=['jogo-da-velha','',''];
 function CreateDivs()
 {
     for(var i=0;i<imgs.length;i++)
@@ -41,9 +41,11 @@ function CreateImagens()
         newImg.style.width="100%";
         container.appendChild(newImg);
         div.id+="download"+i.toString();
+        container.style.filter="drop-shadow(0px 0px 10px white)";
         container.appendChild(div2);
         container.appendChild(div);
-        
+        container.style.border="white 5px solid";
+        container.style.borderRadius="15px";
         container.style.width="320px";
         container.style.height="280px";
         container.style.backgroundColor="#6d758d";
@@ -66,8 +68,19 @@ function CreateDownload()
             newLink.setAttribute('target',"_blank");
         }
         newLink.appendChild(newImg);
-        newLink.style.width="50%";
-        newLink.style.marginLeft="25%";
+        newLink.style.position="absolute";
+        newLink.style.left="20%";
+        newLink.style.bottom="5%";
         document.getElementById('download'+i.toString()).appendChild(newLink);
+    }
+}
+
+function Effect()
+{
+    for(var i=0;i<imgs.length;i++)
+    {
+        var container=document.getElementById('container'+i.toString());
+        container.style.filter="drop-shadow(0px 0px 15px white)";
+
     }
 }
