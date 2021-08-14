@@ -1,9 +1,9 @@
 //Array com o caminho de cada imagem dos meus projetos adicione um novo caminho para um novo projeto
-var imgs=['./Img/BannerJogodaVelha.png','./Img/BannerNewPong.png','./Img/BannerSpaceShooter.png'];
-var downloadImg='./Img/Download.png';
+var imgs=['./Img/BannerJogodaVelha.png','./Img/BannerNewPong.png','./Img/BannerSpaceShooter.png',"./Img/BannerChamaORubens.png"];
+var downloadImg='./Img/Jogar.png';
 var emBreve='./Img/emBreve.png';
 // nome da parte final da url de cada projeto, adicione um novo para ter o link estabelecido deve estar na mesma ordem do array de imgs
-var links=['jogo-da-velha','',''];
+var links=['jogo-da-velha','','','chamaorubens'];
 function CreateDivs()
 {
     for(var i=0;i<imgs.length;i++)
