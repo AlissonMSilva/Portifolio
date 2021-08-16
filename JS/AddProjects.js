@@ -49,8 +49,10 @@ function CreateImagens()
         container.style.width="320px";
         container.style.height="280px";
         container.style.backgroundColor="#6d758d";
+        
+        container.style.margin="0 auto";
         container.style.marginTop="20px";
-        container.style.marginLeft="5%";
+
         
     }
 }
