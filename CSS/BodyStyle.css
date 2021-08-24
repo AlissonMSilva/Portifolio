@@ -69,17 +69,6 @@ html
   transition: background 2s;
 
 }
-#Perfil:hover
-{
-  background: url("../Img/IMG_20180430_203001_159.jpg");
-  display: block;
-  background-size: 100%;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
-  transition: background 2s;
-}
-
 .Info{
   margin-top: 10%;
 }
