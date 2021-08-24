@@ -41,10 +41,8 @@ function CreateImagens()
         newImg.style.width="100%";
         container.appendChild(newImg);
         div.id+="download"+i.toString();
-        container.style.filter="drop-shadow(0px 0px 10px white)";
         container.appendChild(div2);
         container.appendChild(div);
-        container.style.border="white 5px solid";
         container.style.borderRadius="15px";
         container.style.width="320px";
         container.style.height="280px";

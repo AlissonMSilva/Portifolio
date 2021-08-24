@@ -13,7 +13,7 @@
     <title>Alisson GameDev</title>
 </head>
 
-<body onload="CreateDivs()">
+<body onload="CreateDivs(); ">
     <nav id="socialMedia" class="navbar-expand-lg">
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -56,7 +56,7 @@
         </div>
     </nav>
         <div id="Info" class="Info row center">
-            <div id=text class="col-md-3">
+            <div id="text" class="col-md-3">
                 <font size="3">
                    A lei da mente e implacavel. <br>
                    Oque você pensa, você cria; <br>
@@ -67,22 +67,22 @@
                         style="color:#df3e23; font-weight:bold; font-size:150%;">~Buda~</span>
                 </font>
             </div>
-            <div class="col-md-6 center">
-                <div id="Perfil" class="mx-auto d-block" >
+            <div class="col-md-6">
+                <div id="Perfil" class="mx-auto d-block" setInterval>
                 </div>
             </div>
-            <div id=text-2 class="col-md-3">
-                <font size="3">
-                    Bem-vindo, me chamo Alisson sou desenvolvedor de Jogos e crio sites como passatempo.
-                    Cursei Análise e Desenvolvimento de Sistemas, trabalho com a criação de Games há mais de 
-                    2 anos, utilizo a Game Engine<span style="color:#33df23; font-weight:bold; font-size:125%;">GameMaker Studiom 2 </span>
-                    ,penso em novas formas de ser passar a melhor sensação ao se jogar, chamada 
-                    <span style="color:#df3e23; font-weight:bold; font-size:125%;">"juice"</span> 
-                    focando no entretenimento e diversão. Os jogos aqui presentes no momento são projetos que 
-                    desenvolvi pessoalmente como estudo,aulas de curso e alguns trabalhos.
-                </font>
-            </div>
         </div> 
+        <div id="text-2" class="center ">
+            <font size="3">
+                Bem-vindo, me chamo Alisson sou desenvolvedor de Jogos e crio sites como passatempo.
+                Cursei Análise e Desenvolvimento de Sistemas, trabalho com a criação de Games há mais de 
+                2 anos, utilizo a Game Engine<span style="color:#33df23; font-weight:bold; font-size:125%;">GameMaker Studiom 2 </span>
+                ,penso em novas formas de ser passar a melhor sensação ao se jogar, chamada 
+                <span style="color:#df3e23; font-weight:bold; font-size:125%;">"juice"</span> 
+                focando no entretenimento e diversão. Os jogos aqui presentes no momento são projetos que 
+                desenvolvi pessoalmente como estudo,aulas de curso e alguns trabalhos.
+            </font>
+        </div>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2000">
         <div class="container">
             <div class=" logo center"> 
@@ -231,6 +231,7 @@
     </section>
     
     <script src="./JS/AddProjects.js"></script>
+    <script src="./JS/RGB.js"></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <script src="https://use.fontawesome.com/bca4cd3500.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
