@@ -39,11 +39,11 @@ html
 }
 #Jogos
 {
-  padding: 5%;
+  padding: 10%;
 }
 #games img
 {
-  padding: 10px;
+  padding: 5px;
   border-radius: 25px;
 }
 #games a [src="./Img/Jogar.png"]:hover
@@ -51,7 +51,7 @@ html
   filter:drop-shadow(0px 0px 6px rgb(99, 252, 99));
 }
 #Artes{
-  margin-top:20%;
+  margin:auto;
   margin-bottom: 20%;
 }
 .logo
@@ -60,57 +60,80 @@ html
 }
 * {box-sizing:border-box;}
 #Perfil{
-  background: url("../Img/Miles\ pixel\ art.png") no-repeat;
-
+  background: url("../Img/Miles\ pixel\ art.png");
   background-size: 100%;
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
-  transition: background 2s;
-
+  width: 280px;
+  height: 280px;
+  margin-top: 100px;
 }
-.Info{
-  margin-top: 10%;
+#text{
+  margin-top: 45px;
+  text-align: center;
 }
-#text, #text-2
+#text_1{
+  margin-top: 200px;
+  padding-left: 30%;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+}
+#text_1 span{
+  color: rgb(64, 253, 244);
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 110px;
+}
+#text span{
+  color: rgb(64, 253, 244);
+  font-size: 60px;
+  font-weight: bold;
+  margin-right: 230px;
+}
+#text p
 {
   word-wrap: break-word;
-  align-self:center;
   color: rgb(255, 255, 255);
+  padding-right: 35px;
+  
 }
-#text-2{
-  max-width:880px;
-  margin-top: 50px;
-  padding: 80px;
-}
+
 /*Mudança Estilização de textos*/
 #Skills
 {
-  margin-top:5%;
-  margin-bottom: 20%;
+  margin-bottom: 10%;
   box-sizing: border-box;
-  margin-top: 20px;
-  font-size:1.2em;
   color: #ffffff;
   font-weight: bolder;
-  text-transform: uppercase;
-  padding-top:20px ;
 }
-#Skills img
-{
-  width:10%;
-  border-radius: 20%;
+#habilidades{
+  text-align: center;
+  display: inline;
+  padding: 15px;
+  margin-left:9%;
+  background: #313131;
+  width: 250px;
+  height: auto;
+  border: 2px solid white;
+  border-radius: 0px 25px;
+}
+#habilidades h3{font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#habilidades p{
+  margin-top: 20px;
+  font-size: 16px;
+}
+hr{
+  padding: 0;
+  margin: 0;
+  border: 1px solid white;
 }
 h3,h2
 {
   color: #ffffff;
   font-weight: bold;
 }
-h2
-{
-  margin-bottom: 20px;
-}
-
 /* Lista de Jogos parte de estilização do mesmo icons img e outros*/
 .projetoBackImage
 {
@@ -150,7 +173,7 @@ padding:0px;
   filter:drop-shadow(0px 0px 2px white);
 }
 #Contato div{
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .contato
 {
@@ -181,22 +204,13 @@ padding:0px;
     background-position: center;
     background-size: 90%;
   }
-  #text
-  {
-    margin-bottom: 50px;    
-  }
   .SobreMin
   {
     border-radius: 80%;
     width: 40%;
   }
-  #Skills p{
-    font-size:1.5em;
-    font-style: oblique;
-  }
-  #Skills img
-  {
-    width: 20%;
+  #habilidades{
+    margin: 20px 25%;
   }
   #text-project{
     margin-top: 225px;
@@ -208,5 +222,12 @@ padding:0px;
   #navbar
   {
     margin-left: 20px;
+  }
+  .projetoBackImage
+  {
+    height: 300px;
+  }
+  #text-project{
+    margin-top: 25px;
   }
 }

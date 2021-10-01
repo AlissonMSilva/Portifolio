@@ -1,9 +1,7 @@
 var picture=document.getElementById("Perfil");
 var home=document.getElementById("Home");
-var divObj=document.getElementById("games");
 var nav=document.getElementById("navbar");
 var con=[];
-console.log(con);
 var i=0;
 var max=false;
 setInterval(function(){

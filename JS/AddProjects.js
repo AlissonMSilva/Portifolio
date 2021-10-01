@@ -1,9 +1,9 @@
 //Array com o caminho de cada imagem dos meus projetos adicione um novo caminho para um novo projeto
-var imgs=['./Img/BannerJogodaVelha.png','./Img/BannerNewPong.png','./Img/BannerSpaceShooter.png',"./Img/BannerChamaORubens.png"];
+var imgs=['./Img/BannerJogodaVelha.png',"./Img/BannerChamaORubens.png","./Img/BannerJoJoAdventure.png"];
 var downloadImg='./Img/Jogar.png';
 var emBreve='./Img/emBreve.png';
 // nome da parte final da url de cada projeto, adicione um novo para ter o link estabelecido deve estar na mesma ordem do array de imgs
-var links=['jogo-da-velha','','','chamaorubens'];
+var links=['jogo-da-velha','chamaorubens','jotaroadventures'];
 function CreateDivs()
 {
     for(var i=0;i<imgs.length;i++)
@@ -33,22 +33,26 @@ function CreateImagens()
     for(var i=0;i<imgs.length;i++)
     {
         var newImg=new Image();
+        var imgEngine=new Image();
         var container=document.getElementById('container'+i.toString());
         var div=document.createElement('div');
         var div2=document.createElement('div');
-        div2.className+="p-2";
         newImg.src=imgs[i];
         newImg.style.width="100%";
+        newImg.style.padding="10px";
+        imgEngine.src='./Img/iconGameMaker.png';
+        imgEngine.style.width="10%";
+        imgEngine.style.marginLeft="10px";
         container.appendChild(newImg);
+        container.appendChild(imgEngine);
         div.id+="download"+i.toString();
         container.appendChild(div2);
         container.appendChild(div);
         container.style.borderRadius="15px";
         container.style.width="320px";
-        container.style.height="280px";
+        container.style.height="310px";
         container.style.backgroundColor="#6d758d";
-        
-        container.style.margin="0 auto";
+        container.style.margin="auto";
         container.style.marginTop="20px";
 
         
@@ -60,17 +64,11 @@ function CreateDownload()
     {
         var newImg=new Image();
         var newLink=document.createElement('a');
-        newImg.src=emBreve;
-        if(links[i]!='')
-        {
-            newImg.src=downloadImg;
-            newLink.setAttribute('href','https://morfeudev.itch.io/'+links[i]);
-            newLink.setAttribute('target',"_blank");
-        }
+        newImg.src=downloadImg;
+        newLink.setAttribute('href','https://morfeudev.itch.io/'+links[i]);
+        newLink.setAttribute('target',"_blank");
         newLink.appendChild(newImg);
-        newLink.style.position="absolute";
-        newLink.style.left="20%";
-        newLink.style.bottom="5%";
+        newLink.style.marginLeft="20%";
         document.getElementById('download'+i.toString()).appendChild(newLink);
     }
 }
