@@ -1,6 +1,7 @@
 var picture=document.getElementById("Perfil");
 var home=document.getElementById("Home");
 var nav=document.getElementById("navbar");
+var body=document.getElementById("body");
 var con=[];
 var i=0;
 var max=false;
@@ -25,11 +26,9 @@ function Color()
     {
         var elements=document.getElementById("container"+x);
         con[x]=elements;
-        con[x].style.filter="drop-shadow(0px 0px 15px #"+color[i]+")";
         con[x].style.border="solid #"+color[i]+" 4px";
     }
-    nav.style.filter="drop-shadow(0px 0px 8px #"+color[i]+")";
-    home.style.filter="drop-shadow(0px 0px 15px #"+color[i]+")";
+    body.style.filter="drop-shadow(0px 0px 8px #"+color[i]+")";
     picture.style.border="solid #"+color[i]+" 4px";
     picture.style.filter="drop-shadow(0px 0px 15px #"+color[i]+")";
 }

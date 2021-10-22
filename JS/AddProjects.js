@@ -1,7 +1,8 @@
 //Array com o caminho de cada imagem dos meus projetos adicione um novo caminho para um novo projeto
 var imgs=['./Img/BannerJogodaVelha.png',"./Img/BannerChamaORubens.png","./Img/BannerJoJoAdventure.png"];
 var downloadImg='./Img/Jogar.png';
-var emBreve='./Img/emBreve.png';
+var github='./Img/Github.png';
+var size="12%";
 // nome da parte final da url de cada projeto, adicione um novo para ter o link estabelecido deve estar na mesma ordem do array de imgs
 var links=['jogo-da-velha','chamaorubens','jotaroadventures'];
 function CreateDivs()
@@ -32,8 +33,8 @@ function CreateImagens()
 {
     for(var i=0;i<imgs.length;i++)
     {
-        var newImg=new Image();
-        var imgEngine=new Image();
+        var newImg=new Image(),imgEngine=new Image(),imgPlatform=new Image();
+
         var container=document.getElementById('container'+i.toString());
         var div=document.createElement('div');
         var div2=document.createElement('div');
@@ -41,10 +42,14 @@ function CreateImagens()
         newImg.style.width="100%";
         newImg.style.padding="10px";
         imgEngine.src='./Img/iconGameMaker.png';
-        imgEngine.style.width="10%";
+        imgEngine.style.width=size;
         imgEngine.style.marginLeft="10px";
+        imgPlatform.src="./Img/HtmlLogo.png";
+        imgPlatform.style.width=size;
+        imgPlatform.style.marginLeft="10px";
         container.appendChild(newImg);
         container.appendChild(imgEngine);
+        container.appendChild(imgPlatform);
         div.id+="download"+i.toString();
         container.appendChild(div2);
         container.appendChild(div);
