@@ -209,6 +209,16 @@ padding:0px;
     border-radius: 80%;
     width: 40%;
   }
+  #text_1{
+    padding-left: 0%;
+    margin-left: 0px;
+  }
+  #text_1 span{
+    margin-left: 0px;
+  }
+  #text span{
+    margin-right: 80%;
+  }
   #habilidades{
     margin: 20px 25%;
   }
