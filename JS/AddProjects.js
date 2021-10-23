@@ -13,6 +13,7 @@ function CreateDivs()
         div.className+="col-lg-4 col-md-6";
         div.id+=i.toString();
         document.getElementById("games").appendChild(div); 
+        div.classList.add('anime');
     }
     CreateSubsDivs();
 }
@@ -46,7 +47,6 @@ function CreateImagens()
         imgEngine.style.marginLeft="10px";
         imgPlatform.src="./Img/HtmlLogo.png";
         imgPlatform.style.width=size;
-        imgPlatform.style.marginLeft="10px";
         container.appendChild(newImg);
         container.appendChild(imgEngine);
         container.appendChild(imgPlatform);

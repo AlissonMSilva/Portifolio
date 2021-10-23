@@ -14,18 +14,21 @@ html
   margin: auto;
   text-align: center;
 }
-#Home
+.anime{
+  opacity: 0;
+  transform: translate3d(-100px,-150px,0);
+  transition: .3s;
+}
+.anime-start{
+  opacity: 1;
+  transform: translate3d(0,0,0);
+}
+#socialMedia
 {
-    background: url("../Img/GameMobile.png") 0px 0px;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 350px;
+  position: relative;
+  animation-name: leftToRight;
+  animation-duration: 2s;
 }
-
-.p-2{
-  padding: .5rem!important;
-}
-/*Parte do site Informações*/
 #socialMedia .iconify { width: 36px; height: 36px; }
 #socialMedia a
 {
@@ -37,23 +40,23 @@ html
 {
   filter:drop-shadow(0px 0px 2px white);
 }
-#Jogos
+#Home
 {
-  padding: 10%;
+  background: url("../Img/GameMobile.png") 0px 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  padding: 350px;
+  position: relative;
+  animation-name:intro;
+  animation-duration: 5s;
 }
-#games img
-{
-  padding: 5px;
-  border-radius: 25px;
+.p-2{
+  padding: .5rem!important;
 }
-#games a [src="./Img/Jogar.png"]:hover
-{
-  filter:drop-shadow(0px 0px 6px rgb(99, 252, 99));
-}
-#Artes{
-  margin:auto;
-  margin-bottom: 20%;
-}
+/*Parte do site Informações*/
+
+
 .logo
 {
   margin-bottom: 5%;
@@ -69,6 +72,8 @@ html
 }
 #text{
   margin-top: 45px;
+  line-height: 30px;
+  font-size: large;
   text-align: center;
 }
 #text_1{
@@ -109,11 +114,12 @@ html
 #habilidades{
   text-align: center;
   display: inline;
+  
   padding: 15px;
   margin-left:9%;
   background: #313131;
   width: 250px;
-  height: auto;
+  height: 250px;
   border: 2px solid white;
   border-radius: 0px 25px;
 }
@@ -134,7 +140,6 @@ h3,h2
   color: #ffffff;
   font-weight: bold;
 }
-/* Lista de Jogos parte de estilização do mesmo icons img e outros*/
 .projetoBackImage
 {
   width: 100%;
@@ -150,7 +155,20 @@ h3,h2
   font-weight: bold;
   font-size: large;
 }
-/* termina aqui jogos */
+#Jogos
+{
+  padding: 10%;
+}
+#games img
+{
+  padding: 5px;
+  border-radius: 25px;
+}
+#games a [src="./Img/Jogar.png"]:hover
+{
+  filter:drop-shadow(0px 0px 6px rgb(99, 252, 99));
+}
+
 div{
 display:block;
 padding:0px;
@@ -158,6 +176,11 @@ padding:0px;
 .contato
 {
   background:url(../Img/navbarNight.png) no-repeat;
+  height: 192px;
+  width: auto;
+}
+.contato i{
+  padding-right: 30px;
 }
 #Contato
 {
@@ -202,7 +225,7 @@ padding:0px;
     background-image: url("../Img/GameMobile.png");
     padding-right: 0px;
     background-position: center;
-    background-size: 90%;
+    background-size: 100%;
   }
   .SobreMin
   {
@@ -221,6 +244,8 @@ padding:0px;
   }
   #habilidades{
     margin: 20px 25%;
+    width: 550px;
+    height: 350px;
   }
   #text-project{
     margin-top: 225px;
@@ -239,5 +264,19 @@ padding:0px;
   }
   #text-project{
     margin-top: 25px;
+  }
+}
+/* Animações */
+@keyframes leftToRight {
+  from{transform:translateX(-200px);}
+  to{transform:translateX(0px)};
+}
+@keyframes intro {
+  from{top:-650px;
+    background-size: 0%;;
+  }
+  to{
+    top:0px;
+    background-size: 80%;;
   }
 }
